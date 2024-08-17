@@ -6,51 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Anjinhos</title>
 </head>
 
-<body>
-  <nav id="navbar-example2" class="navbar px-3">
-    <a class="navbar-brand" href="index.html"><img src="../imagens/2.png" style="width: 20%;"/></a>
-    <ul class="nav nav-pills">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="false">Navegação</a>
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item" href="#scrollspyHeading1">Sobre</a>
-          </li>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li>
-            <a class="dropdown-item" href="#scrollspyHeading2">Como baixar?</a>
-          </li>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li>
-            <a class="dropdown-item" href="#scrollspyHeading3">Acessibilidade</a>
-          </li>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li>
-            <a class="dropdown-item" href="#scrollspyHeading4">Feedbacks</a>
-          </li>
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li>
-            <a class="dropdown-item" href="#scrollspyHeading5">Contatos</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<body class="body">
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <nav id="navbar-example2" class="navbar container-fluid fixed-top">
+    <div class="row w-100">
+        <!-- Coluna para a imagem -->
+        <div class="col-6">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/2.png" class="img-fluid" />
+            </a>
+        </div>
+
+        <div class="col-6">
+            <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                       aria-expanded="false">Buscar</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading1">Sobre</a></li>
+                        <li><hr class="dropdown-divider"/></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading2">Como baixar?</a></li>
+                        <li><hr class="dropdown-divider"/></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Acessibilidade</a></li>
+                        <li><hr class="dropdown-divider"/></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Feedbacks</a></li>
+                        <!--<li><hr class="dropdown-divider"/></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Contatos</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!--<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -61,21 +55,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../imagens/frame.png" class="d-block w-100" alt="..." />
+        <img src="imagens/frame.png" class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../imagens/frame.png" class="d-block w-100" alt="..." />
+        <img src="imagens/frame.png" class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../imagens/frame.png" class="d-block w-100" alt="..." />
+        <img src="imagens/frame.png" class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -90,81 +84,62 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div>-->
   <main>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
       tabindex="0">
       <h4 id="scrollspyHeading1">Anjinhos: Educação Social Gamificada</h4>
       <div>
-        <p>Anjinhos é um jogo em estilo de novela visual interativa (visual novel), que aborda temas sobre responsabilidade social na infância. </p>
-        <p>Este projeto é destinado a crianças do ensino fundamental 1, mais especificamente recomendado para uso entre o primeiro e o terceiro ano. O que não o impede de ser aplicado para criaças ainda na educação infantil, pois o jogo é completamente dublado e não deve interferir no aprendizado dos que ainda não são alfabetizados.</p>
-        <p>Anjinhos é um projeto gratuito para uso, aprovado por profissionais da educação e testado por alunos que correspondem ao seu público alvo. Contando com recursos de acessibilidade e propondo uma interface gráfica simples e ilustrativa, ele deve ser um ótimo recurso para implementar na sua sala de aula ou até mesmo em casa!</p>
+        <p>Anjinhos é um jogo em estilo de novela visual interativa (visual novel), que aborda temas sobre
+          responsabilidade social na infância. </p>
+        <p>Este projeto é destinado a crianças do ensino fundamental 1, mais especificamente recomendado para uso entre
+          o primeiro e o terceiro ano. O que não o impede de ser aplicado para criaças ainda na educação infantil, pois
+          o jogo é completamente dublado e não deve interferir no aprendizado dos que ainda não são alfabetizados.</p>
+        <p>Anjinhos é um projeto gratuito para uso, aprovado por profissionais da educação e testado por alunos que
+          correspondem ao seu público alvo. Contando com recursos de acessibilidade e propondo uma interface gráfica
+          simples e ilustrativa, ele deve ser um ótimo recurso para implementar na sua sala de aula ou até mesmo em
+          casa!</p>
       </div>
 
       <h4 id="scrollspyHeading2">Como baixar?</h4>
       <div>
         <p>Para baixar o jogo é muito simples!</p>
-        <p>Basta escolher o episódio que você pretende jogar e em que tipo de aparelho será feito o download. Assim, escolha abaixo o que corresponde com as suas necessidades!</p>
+        <p>Basta escolher o episódio que você pretende jogar e em que tipo de aparelho será feito o download. Assim,
+          escolha abaixo o que corresponde com as suas necessidades!</p>
       </div>
 
-      <div class="row">
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
+      <div class="row justify-content-center">
+      <div class="card h-100 col-lg-6 col-sm-10">
+        <img src="imagens/capa.png" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Anjinhos</b> em: Comunicação não violenta com Yuri</h5>
+          <p class="card-text">Neste episódio você acompanhará Yuri em sua jornada para aprender como se comunicar de forma não violenta.</p>
+          <a href="Anjinhos-1.0-pc.zip" download="Anjinhos-1.0-pc.zip" class="btn btn-warning">Computador</a>
+          <a href="#" class="btn btn-secondary">Android</a>
+          <a href="#" class="btn btn-secondary">IOS</a>
         </div>
+      </div>
+
 
 
       </div>
 
       <h4 id="scrollspyHeading3">Acessibilidade</h4>
       <div>
-        <p>Anjinhos é construído na engine de jogos "Ren'py", que disponibiliza para seus projetos recursos de acessibilidade, que podem ser acessados: </p>
-        <p>1. Pelo computador ao usar o comando "shift + A".</p>
-        <p>2. Pelo celular ao ...</p>
-        <p>Os principais recursos de acessibilidade são: leitura do texto da tela, ajuste de tamanho da tipografia...</p>
-        <p>colocar prints ilustrativos...</p>
-      
+        <p>Anjinhos é construído na engine de jogos "Ren'py", que disponibiliza para seus projetos recursos de
+          acessibilidade, que podem ser acessados: </p>
+        <p><b>1.</b> Pelo computador ao usar o comando <b>"shift + A"</b>.</p>
+        <p><b>2.</b> Pelo celular <i>em breve...</i></p>
+        <p>Os principais recursos de acessibilidade são: leitura do texto da tela e ajuste de tamanho da tipografia.
+        </p>
+
       </div>
       <h4 id="scrollspyHeading4">Feedbacks</h4>
       <p>Em breve...</p>
     </div>
   </main>
   <footer>
-    <h4 id="scrollspyHeading5">Contatos</h4>
+    <!--<h4 id="scrollspyHeading5">Contatos</h4>-->
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
